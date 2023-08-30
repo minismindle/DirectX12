@@ -5,6 +5,9 @@ public:
 
 	void Init(const WindowInfo& info);
 	void Render();
+public:
+	void RenderBegin();
+	void RenderEnd();
 
 	void ResizeWindow(int32 width,int32 height);
 private:
@@ -15,7 +18,7 @@ private:
 	shared_ptr<class Device> _device;
 	shared_ptr<class CommandQueue> _cmdQueue;
 	shared_ptr<class SwapChain> _swapChain;
-	shared_ptr<class DescriptorHeap> _desHeap;
+	shared_ptr<class DescriptorHeap> _descHeap;
 
 };
 
