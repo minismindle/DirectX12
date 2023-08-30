@@ -19,8 +19,8 @@
 // - 특수 종이를 2개 만들어서, 하나는 현재 화면을 그려주고, 하나는 외주 맡기고...
 // - Double Buffering!
 
-// - [1] [2]
-// 현재 화면 [1]  <-> GPU 작업중 [2] BackBuffer
+// - [0] [1]
+// 현재 화면 [0]  <-> GPU 작업중 [1] BackBuffer
 
 class SwapChain
 {

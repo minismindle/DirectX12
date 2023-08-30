@@ -19,6 +19,7 @@ void Engine::Init(const WindowInfo& info)
 
 	_device->Init();
 	_cmdQueue->Init(_device->GetDevice(),_swapChain,_desHeap);
+	_swapChain->Init(info, _device->GetDXGI(), _cmdQueue->GetCmdQueue());
 }
 
 void Engine::Render()
