@@ -1,7 +1,6 @@
 #include "pch.h"
+#include "Engine.h"
 #include "EnginePch.h"
 
-void HelloEngine()
-{
+unique_ptr<Engine> GEngine;
 
-}
