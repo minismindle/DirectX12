@@ -30,7 +30,7 @@ private:
 	uint32								_fenceValue = 0;
 	HANDLE								_fenceEvent = INVALID_HANDLE_VALUE;
 
-	shared_ptr<SwapChain>		_swapChain;
-	shared_ptr<DescriptorHeap>	_descHeap;
+	shared_ptr<SwapChain>				_swapChain;
+	shared_ptr<DescriptorHeap>			_descHeap;
 };
 
