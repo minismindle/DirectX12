@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Device.h"
 
+
 void Device::Init()
 {
 	// D3D12 디버그층 활성화

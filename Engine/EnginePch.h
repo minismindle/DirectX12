@@ -53,4 +53,8 @@ struct WindowInfo
 	int32	height;
 	bool	windowed;
 };
+
+#define DEVICE		GEngine->GetDevice()->GetDevice()
+#define CMD_LIST	GEngine->GetCmdQueue()->GetCmdList()
+
 extern unique_ptr<class Engine> GEngine;
