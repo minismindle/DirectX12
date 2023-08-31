@@ -53,8 +53,15 @@ struct WindowInfo
 	int32	height;
 	bool	windowed;
 };
+struct Vertex
+{
+	Vec3 pos;
+	Vec4 color;
+};
+
 
 #define DEVICE		GEngine->GetDevice()->GetDevice()
 #define CMD_LIST	GEngine->GetCmdQueue()->GetCmdList()
+#define ROOT_SIGNATURE	GEngine->GetRootSignature()->GetSignature()
 
 extern unique_ptr<class Engine> GEngine;
