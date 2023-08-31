@@ -21,9 +21,6 @@
     <ClCompile Include="Engine.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="DescriptorHeap.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="Device.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
@@ -48,9 +45,6 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="SwapChain.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="DescriptorHeap.h">
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="Device.h">

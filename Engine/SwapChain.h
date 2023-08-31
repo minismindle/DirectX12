@@ -32,8 +32,8 @@ public:
 	ComPtr<IDXGISwapChain> GetSwapChain() { return _swapChain; }
 	ComPtr<ID3D12Resource> GetRenderTarget(int32 index) { return _rtvBuffer[index]; }
 
-	uint32 GetCurrentBackBufferIndex() { return _backBufferIndex; }
-	ComPtr<ID3D12Resource> GetCurrentBackBufferResource() { return _rtvBuffer[_backBufferIndex]; }
+	ComPtr<ID3D12Resource> GetBackRTVBuffer() { return _rtvBuffer[_backBufferIndex]; }
+	D3D12_CPU_DESCRIPTOR_HANDLE GetBackRTV() { return _rtvHandle[_backBufferIndex]; }
 private:
 	void CreateSwapChain(const WindowInfo& info, ComPtr<IDXGIFactory> dxgi, ComPtr<ID3D12CommandQueue> cmdQueue);
 	void CreateRTV(ComPtr<ID3D12Device> device);
