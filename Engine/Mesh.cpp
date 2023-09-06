@@ -47,5 +47,7 @@ void Mesh::Render()
 	handle = GEngine->GetCB()->PushData(1, &_transform, sizeof(_transform));
 	GEngine->GetTableDescHeap()->SetCBV(handle, CBV_REGISTER::b1);
 	
+	GEngine->GetTableDescHeap()->CommitTable();
+
 	CMD_LIST->DrawInstanced(_vertexCount, 1, 0, 0);
 }
