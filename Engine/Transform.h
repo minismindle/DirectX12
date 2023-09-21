@@ -17,6 +17,8 @@ public:
 
 private:
 	// TODO : World 위치 관련
-
+	Vec3 _localPosition;
+	Vec3 _localRotation;
+	Vec3 _localScale;
 };
 

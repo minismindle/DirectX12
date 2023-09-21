@@ -80,7 +80,7 @@ enum class SRV_REGISTER : uint8
 
 	END
 };
-
+ 
 enum
 {
 	SWAP_CHAIN_BUFFER_COUNT = 2,
