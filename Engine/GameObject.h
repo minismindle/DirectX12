@@ -1,6 +1,6 @@
 #pragma once
 #include "Component.h"
-
+#include "Camera.h"
 class Transform;
 class MeshRenderer;
 class MonoBehaviour;
@@ -11,15 +11,17 @@ public:
 	GameObject();
 	virtual ~GameObject();
 
-	void Init();
-
 	void Awake();
 	void Start();
 	void Update();
 	void LateUpdate();
 	void FinalUpdate();
 
+	shared_ptr<Component> GetFixedComponent(COMPONENT_TYPE type);
+
 	shared_ptr<Transform> GetTransform();
+	shared_ptr<MeshRenderer> GetMeshRenderer();
+	shared_ptr<Camera> GetCamera();
 
 	void AddComponent(shared_ptr<Component> component);
 
