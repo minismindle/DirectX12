@@ -80,7 +80,7 @@ enum class SRV_REGISTER : uint8
 
 	END
 };
- 
+
 enum
 {
 	SWAP_CHAIN_BUFFER_COUNT = 2,
@@ -99,9 +99,17 @@ struct WindowInfo
 
 struct Vertex
 {
+	Vertex() {}
+
+	Vertex(Vec3 p, Vec2 u, Vec3 n, Vec3 t)
+		: pos(p), uv(u), normal(n), tangent(t)
+	{
+	}
+
 	Vec3 pos;
-	Vec4 color;
 	Vec2 uv;
+	Vec3 normal;
+	Vec3 tangent;
 };
 
 #define DECLARE_SINGLE(type)		\
@@ -131,4 +139,5 @@ struct TransformParams
 {
 	Matrix matWVP;
 };
+
 extern unique_ptr<class Engine> GEngine;
