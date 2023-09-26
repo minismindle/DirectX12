@@ -12,6 +12,10 @@ public:
 	void LateUpdate();
 	void FinalUpdate();
 
+	void Render();
+private:
+	void PushLightData();
+
 	void AddGameObject(shared_ptr<GameObject> gameObject);
 	void RemoveGameObject(shared_ptr<GameObject> gameObject);
 	

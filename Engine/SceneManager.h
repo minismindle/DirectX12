@@ -11,6 +11,7 @@ public:
 	void Render();
 	void LoadScene(wstring sceneName);
 
+
 public:
 	shared_ptr<Scene> GetActiveScene() { return _activeScene; }
 
